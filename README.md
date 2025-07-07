@@ -1,4 +1,4 @@
-# MCP Inspector (Custom Headers) 
+# MCP Inspector (Custom Headers)
 - This is customized **MCP Inspector** to support multiple headers.
 - **Origin from:** https://github.com/popomore/inspector
 

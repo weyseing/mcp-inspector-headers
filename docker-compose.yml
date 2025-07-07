@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  mcp_inspector:
+    container_name: mcp_inspector
+    build: .
+    ports:
+      - "6274:6274"
+      - "6277:6277"
+    environment:
+      CLIENT_PORT: 6274
+      SERVER_PORT: 6277
+      HOST: 0.0.0.0
+      DANGEROUSLY_OMIT_AUTH: true
+    volumes:
+      - .:/app
+    networks:
+      aws_molpay:
+      aliyun_molpay:
+
+networks:
+  aws_molpay:
+    external: true
+  aliyun_molpay:
+    external: true

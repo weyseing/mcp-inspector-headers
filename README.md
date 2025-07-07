@@ -4,6 +4,7 @@
 
 # Setup Guide
 - Start up **MCP Server**.
+- Run `npm install`.
 - Start up **MCP Inspector** via `docker compose up -d`.
 - Access to UI via browser `http://127.0.0.1:6274`
 - Set url based on MCP Server types

@@ -15,11 +15,11 @@ services:
     volumes:
       - .:/app
     networks:
+      global-net:
       aws_molpay:
-      aliyun_molpay:
 
 networks:
-  aws_molpay:
+  global-net:
     external: true
-  aliyun_molpay:
+  aws_molpay:
     external: true
